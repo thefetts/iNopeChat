@@ -2,11 +2,12 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var lookUponMyWorks: UITextField!
-    var timer: Timer!
+    @IBOutlet var andDespair: UILabel!
+    var ozymandias: Timer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(thisTooShallPass), userInfo: nil, repeats: true)
+        ozymandias = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(thisTooShallPass), userInfo: nil, repeats: true)
     }
 
     @objc
@@ -14,6 +15,11 @@ class ViewController: UIViewController {
         if let text = lookUponMyWorks.text {
             if(text.count > 0) {
                 lookUponMyWorks.text = ""
+                andDespair.alpha = 1
+
+                UIView.animate(withDuration: 1) {
+                    self.andDespair.alpha = 0
+                }
             }
         }
     }
