@@ -7,6 +7,7 @@ class ViewController: UIViewController {
     var ozymandias: Timer!
     var sayMyName: Timer!
     var count = 0
+    var messagesDestroyed: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
 
         ozymandias = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(thisTooShallPass), userInfo: nil, repeats: true)
         sayMyName = Timer.scheduledTimer(timeInterval: 0.25, target: self, selector: #selector(youreGodDamnRight), userInfo: nil, repeats: true)
+
+        messagesDestroyed = UserDefaults.standard.integer(forKey: "messagesDestroyed")
     }
 
     @objc
@@ -26,6 +29,11 @@ class ViewController: UIViewController {
         if let text = lookUponMyWorks.text {
             if(text.count > 0) {
                 lookUponMyWorks.text = ""
+
+                messagesDestroyed += 1
+                UserDefaults.standard.set(messagesDestroyed, forKey: "messagesDestroyed")
+
+                andDespair.text = "\(messagesDestroyed!) messages destroyed!"
                 andDespair.alpha = 1
 
                 UIView.animate(withDuration: 1) {
