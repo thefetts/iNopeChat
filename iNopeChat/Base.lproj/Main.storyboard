@@ -29,6 +29,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mas-It-ns7">
+                                <rect key="frame" x="16" y="36" width="343" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="changing how the world sends extremely temporary messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Ig-py-rag">
                                 <rect key="frame" x="16" y="84" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -40,11 +46,15 @@
                         <constraints>
                             <constraint firstItem="0aX-62-aWo" firstAttribute="top" secondItem="Wmn-AB-ACB" secondAttribute="bottom" constant="32" id="F5T-zS-Kqj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0aX-62-aWo" secondAttribute="trailing" constant="16" id="Jnv-dg-JcE"/>
+                            <constraint firstItem="Mas-It-ns7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="NgI-v9-gHs"/>
+                            <constraint firstItem="Mas-It-ns7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RhP-XN-Wcy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Ig-py-rag" secondAttribute="trailing" constant="16" id="aPb-CR-jAW"/>
+                            <constraint firstItem="6Ig-py-rag" firstAttribute="top" secondItem="Mas-It-ns7" secondAttribute="bottom" constant="16" id="as9-JO-3BN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wmn-AB-ACB" secondAttribute="trailing" constant="16" id="b8W-uV-ciB"/>
                             <constraint firstItem="6Ig-py-rag" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="fkf-8o-Q9H"/>
                             <constraint firstItem="Wmn-AB-ACB" firstAttribute="top" secondItem="6Ig-py-rag" secondAttribute="bottom" constant="32" id="imZ-pe-3eL"/>
                             <constraint firstItem="Wmn-AB-ACB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lX5-sX-a7d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mas-It-ns7" secondAttribute="trailing" constant="16" id="m2h-Yd-sGv"/>
                             <constraint firstItem="6Ig-py-rag" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rFl-VH-s0Z"/>
                             <constraint firstItem="0aX-62-aWo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uKP-iy-IgP"/>
                         </constraints>
@@ -52,6 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="andDespair" destination="0aX-62-aWo" id="akC-VW-XSh"/>
+                        <outlet property="heisenberg" destination="Mas-It-ns7" id="ONS-eb-Udg"/>
                         <outlet property="lookUponMyWorks" destination="Wmn-AB-ACB" id="Lw3-FL-4A5"/>
                     </connections>
                 </viewController>
