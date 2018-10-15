@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3CFF214D1B737B2A816CFC6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFF22CF51D4CD11DFE7C6CA /* ViewController.swift */; };
 		3CFF243FC6241FB80B12AD7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CFF2954A6096A77C084C745 /* Assets.xcassets */; };
-		3CFF25936CD46F7C06AB3120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CFF2B7ED619E06D05C88FD2 /* Main.storyboard */; };
 		3CFF2931E7A4AF23FEDCC3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CFF2BC182CB887E4D5B0511 /* LaunchScreen.storyboard */; };
 		3CFF2AB33D4F195CCDCD5909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFF24B428C3FBFAB1760670 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		3CFF200D7F38DD86C27563C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		3CFF22CF51D4CD11DFE7C6CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CFF24B428C3FBFAB1760670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CFF284934323E3095F0F88A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CFF2954A6096A77C084C745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CFF29A11142883C18969301 /* iNopeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNopeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFF2F72E968C9AF50EC6FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 				3CFF2954A6096A77C084C745 /* Assets.xcassets */,
 				3CFF2BC182CB887E4D5B0511 /* LaunchScreen.storyboard */,
 				3CFF24B428C3FBFAB1760670 /* AppDelegate.swift */,
-				3CFF2B7ED619E06D05C88FD2 /* Main.storyboard */,
 				3CFF22CF51D4CD11DFE7C6CA /* ViewController.swift */,
 			);
 			path = iNopeChat;
@@ -116,7 +113,6 @@
 			files = (
 				3CFF243FC6241FB80B12AD7D /* Assets.xcassets in Resources */,
 				3CFF2931E7A4AF23FEDCC3FC /* LaunchScreen.storyboard in Resources */,
-				3CFF25936CD46F7C06AB3120 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,14 +131,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3CFF2B7ED619E06D05C88FD2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CFF284934323E3095F0F88A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3CFF2BC182CB887E4D5B0511 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,8 +265,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -315,6 +302,7 @@
 				3CFF212FBFD39D7B9FC43088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
