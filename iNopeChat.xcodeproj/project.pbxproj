@@ -94,6 +94,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = example;
+				TargetAttributes = {
+					3CFF2EE5C56577AE270B42A4 = {
+						DevelopmentTeam = H6S25Q987W;
+					};
+				};
 			};
 			buildConfigurationList = 3CFF271B434E7EB6B203C6FD /* Build configuration list for PBXProject "iNopeChat" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -215,6 +220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H6S25Q987W;
 				INFOPLIST_FILE = iNopeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.iNopeChat;
@@ -282,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H6S25Q987W;
 				INFOPLIST_FILE = iNopeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.iNopeChat;

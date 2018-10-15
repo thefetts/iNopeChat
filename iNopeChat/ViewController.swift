@@ -8,6 +8,9 @@ class ViewController: UIViewController {
     var sayMyName: Timer!
     var count = 0
     var messagesDestroyed: Int!
+    open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .all
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
