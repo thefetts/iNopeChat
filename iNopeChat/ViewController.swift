@@ -25,6 +25,9 @@ class ViewController: UIViewController {
         sayMyName = Timer.scheduledTimer(timeInterval: 0.25, target: self, selector: #selector(youreGodDamnRight), userInfo: nil, repeats: true)
 
         messagesDestroyed = UserDefaults.standard.integer(forKey: "messagesDestroyed")
+
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(recognizer)
     }
 
     @objc
@@ -54,5 +57,10 @@ class ViewController: UIViewController {
             count = 0
         }
         heisenberg.text = fullName.upTo(i: count)
+    }
+
+    @objc
+    func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        lookUponMyWorks.resignFirstResponder()
     }
 }
