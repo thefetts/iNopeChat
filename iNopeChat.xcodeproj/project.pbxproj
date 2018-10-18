@@ -13,6 +13,7 @@
 		3CFF28F57C3BC68C27062F1A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFF2CB5E64F2E05F99BD3EB /* Extensions.swift */; };
 		3CFF2931E7A4AF23FEDCC3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CFF2BC182CB887E4D5B0511 /* LaunchScreen.storyboard */; };
 		3CFF2AB33D4F195CCDCD5909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFF24B428C3FBFAB1760670 /* AppDelegate.swift */; };
+		8263ED0F2178D6CC00501FA4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8263ED0E2178D6CB00501FA4 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3CFF29A11142883C18969301 /* iNopeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNopeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFF2CB5E64F2E05F99BD3EB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3CFF2F72E968C9AF50EC6FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8263ED0E2178D6CB00501FA4 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8263ED0F2178D6CC00501FA4 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 		3CFF2D6DFC542950D086F416 /* iNopeChat */ = {
 			isa = PBXGroup;
 			children = (
+				8263ED0E2178D6CB00501FA4 /* SnapKit.framework */,
 				3CFF200D7F38DD86C27563C6 /* Info.plist */,
 				3CFF2954A6096A77C084C745 /* Assets.xcassets */,
 				3CFF2BC182CB887E4D5B0511 /* LaunchScreen.storyboard */,
@@ -77,6 +81,7 @@
 				3CFF27754165C12E2739273D /* Sources */,
 				3CFF27A618A97348F888849E /* Frameworks */,
 				3CFF296D407CFD653FFF5945 /* Resources */,
+				8263ED102178D6D700501FA4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,6 +133,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8263ED102178D6D700501FA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3CFF27754165C12E2739273D /* Sources */ = {
@@ -221,6 +248,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H6S25Q987W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iNopeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.iNopeChat;
@@ -289,6 +320,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H6S25Q987W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iNopeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.iNopeChat;
